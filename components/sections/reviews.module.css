@@ -1,0 +1,72 @@
+.section {
+    padding: 80px 0;
+}
+.title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.scroller {
+    width: 100%;
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+.scrollerInner {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-50% - (0.5rem * 10)));
+    }
+}
+.card {
+    width: 350px;
+    flex-shrink: 0;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+.profileIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+.reviewerName {
+    font-weight: 600;
+}
+.reviewText {
+    font-style: italic;
+    color: var(--muted-foreground);
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+.rating {
+    display: flex;
+    gap: 0.25rem;
+    margin-top: auto;
+}

@@ -1,0 +1,32 @@
+.section {
+    padding: 80px 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.logoContainer {
+    text-align: center;
+}
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--muted-foreground);
+}
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 2fr;
+        gap: 4rem;
+    }
+    .logoContainer {
+        text-align: left;
+    }
+}

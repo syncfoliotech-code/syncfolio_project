@@ -1,0 +1,14 @@
+.counterWrapper {
+    text-align: center;
+}
+.counterWrapper p {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    margin: 0;
+}
+.counter {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: 2px;
+}

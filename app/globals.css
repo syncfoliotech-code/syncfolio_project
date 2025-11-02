@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+  --primary: #1e40af;
+  --secondary: #f3f4f6;
+  --muted-foreground: #6b7280;
+  --accent: #16a34a;
+  --border: #e5e7eb;
+  --card-bg: #ffffff;
+}
+.dark {
+  --background: #0d1222;
+  --foreground: #f9fafb;
+  --primary: #60a5fa;
+  --secondary: #1f2937;
+  --muted-foreground: #9ca3af;
+  --accent: #4ade80;
+  --border: #374151;
+  --card-bg: #1f2937;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px; /* Maximum width of the content area */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem; /* Horizontal padding */
+    padding-right: 1.5rem; /* Horizontal padding */
+}
