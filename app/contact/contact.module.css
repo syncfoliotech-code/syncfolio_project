@@ -1,0 +1,134 @@
+.pageContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 120px; 
+    padding-bottom: 5rem;
+    overflow: hidden;
+    gap: 5rem;
+}
+
+.mainContent {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 4rem;
+    width: 100%;
+}
+
+.formContainer {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    color: #ffffff; 
+    flex-shrink: 0;
+}
+
+.logoContainer {
+    display: none;
+    z-index: 2;
+    filter: drop-shadow(0 10px 25px rgba(0,0,0,0.3));
+}
+
+.title { font-size: 2.25rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem; }
+.subtitle { font-size: 1rem; text-align: center; opacity: 0.8; margin-bottom: 2.5rem; }
+.form { display: flex; flex-direction: column; gap: 1.5rem; }
+.inputGroup { position: relative; }
+.icon { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); opacity: 0.6; }
+
+.inputGroup input, .inputGroup select, .inputGroup textarea {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3.5rem; 
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+.inputGroup input::placeholder, .inputGroup textarea::placeholder { color: rgba(255, 255, 255, 0.7); }
+.inputGroup input:focus, .inputGroup select:focus, .inputGroup textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.inputGroup select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+}
+.inputGroup select option { background-color: #0d1222; }
+
+.submitButton {
+    padding: 1rem;
+    background: #ffffff;
+    color: var(--primary);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+}
+.submitButton:hover:not(:disabled) { transform: translateY(-2px); }
+.submitButton:disabled { opacity: 0.7; cursor: not-allowed; }
+.buttonContent { display: flex; align-items: center; gap: 0.75rem; }
+.error { color: #ef4444; }
+.spinner { width: 20px; height: 20px; border: 2px solid rgba(0,0,0,0.2); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+
+/* --- INFO SECTION STYLES (THE FIX) --- */
+.infoSection {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    background-color: var(--secondary); /* Use theme's secondary color */
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+:global(html.light) .infoSection {
+    color: var(--foreground);
+}
+:global(html.dark) .infoSection {
+    color: #ffffff;
+}
+
+.infoDetails { display: flex; flex-direction: column; gap: 2rem; }
+.detailItem { display: flex; align-items: flex-start; gap: 1rem; }
+.detailIcon { color: var(--primary); margin-top: 4px; } /* Use theme's primary color for icons */
+.detailText h4 { margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600; }
+.detailText p { margin: 0; opacity: 0.8; }
+.mapContainer { width: 100%; min-height: 300px; border-radius: 0.75rem; overflow: hidden; }
+.mapFrame { filter: grayscale(1); }
+:global(html.dark) .mapFrame { filter: invert(1) grayscale(1); }
+
+
+/* --- Responsive Styles --- */
+@media (min-width: 992px) {
+    .mainContent { justify-content: space-between; }
+    .logoContainer { display: block; }
+    .infoSection {
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem;
+        gap: 3rem;
+    }
+}

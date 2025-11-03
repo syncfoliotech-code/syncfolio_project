@@ -1,0 +1,64 @@
+.placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.toggleButton {
+    background-color: var(--secondary);
+    border: 1px solid var(--border);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Scrolled state styling (from header.module.css) */
+:global(.scrolled) .toggleButton {
+    background-color: var(--secondary);
+    border-color: var(--border);
+    color: var(--foreground); /* Icon color matches theme when scrolled */
+}
+
+/* Contact page styling */
+:global(.contactPage) .toggleButton {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+
+.sun, .moon {
+    height: 1.2rem;
+    width: 1.2rem;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s;
+    position: absolute;
+}
+
+/* --- THE ANIMATION FIX IS HERE --- */
+
+/* LIGHT THEME (Sun visible, Moon hidden) */
+.sun {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+}
+.moon {
+    transform: scale(0.5) rotate(-90deg);
+    opacity: 0;
+}
+
+/* DARK THEME (Moon visible, Sun hidden) */
+:global(html.dark) .sun {
+    transform: scale(0.5) rotate(90deg);
+    opacity: 0;
+}
+:global(html.dark) .moon {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+}
