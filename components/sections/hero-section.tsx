@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
-import Image from "next/image"; 
+import Image from "next/image";
 import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 import styles from './hero.module.css';
 import VantaBackground from "../vanta-background";
 
@@ -10,7 +11,6 @@ const HeroSection = () => {
     <section className={styles.hero}>
       <VantaBackground />
       <div className={styles.content}>
-        
         <motion.div
           className={styles.logoContainer}
           initial={{ opacity: 0, scale: 0.5 }}
@@ -18,7 +18,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <Image 
-            src="/sync.png" 
+            src="/sync2.png" 
             alt="Syncfolio Tech Logo" 
             width={400} 
             height={100} 
@@ -31,9 +31,9 @@ const HeroSection = () => {
           className={styles.title}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }} 
+          transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Innovate. Integrate. <span className={styles.highlight}>Inspire.</span>
+          Empower Your Productivity with Smart Mobile Tools
         </motion.h1>
         
         <motion.p
@@ -41,9 +41,23 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
+          hidden
         >
-          We deliver cutting-edge technology solutions that bring your vision to life.
+          At SyncFolioTech, we create powerful, intuitive mobile apps that simplify everyday tasks — from editing PDFs to managing your digital workflow.
         </motion.p>
+
+        <motion.div 
+            className={styles.buttonContainer}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+        >
+            <a href="#download" className={styles.buttonPrimary} hidden>Download App</a>
+            <a href="#product" className={styles.buttonSecondary}>Learn More</a>
+        </motion.div>
+      </div>
+      <div className={styles.scrollIndicator}>
+        <ChevronDown size={24} />
       </div>
     </section>
   );

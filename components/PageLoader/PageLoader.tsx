@@ -5,7 +5,7 @@ const PageLoader = () => {
   return (
     <div className={styles.loaderContainer}>
       <div className={styles.logoWrapper}>
-        <Image src="/sync.png" alt="Loading Logo" width={200} height={50} priority />
+        <Image src="/sync2.png" alt="Loading Logo" width={200} height={50} priority />
       </div>
     </div>
   );

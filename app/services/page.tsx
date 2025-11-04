@@ -1,7 +1,8 @@
 "use client";
 import React from 'react';
-import CoreServicesSection from "@/components/sections/core-services-section";
-
+// import CoreServicesSection from "@/components/sections/core-services-section";
+import FeaturesPage from "./why-us-section";
+// import ProductSection from "./product-section";
 import VantaBackground from '@/components/vanta-background';
 import styles from './about.module.css'; 
 import { motion } from 'framer-motion';
@@ -17,7 +18,9 @@ const AboutPage = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <CoreServicesSection />
+          {/* <ProductSection /> */}
+          <br /><br /><br /><br />
+          <FeaturesPage />
         </motion.div>
       </div>
     </div>

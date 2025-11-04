@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import ReviewsSection from "@/components/sections/reviews-section";
+import ReviewsSection from "./reviews-section";
 import VantaBackground from '@/components/vanta-background';
 import styles from './about.module.css'; 
 import { motion } from 'framer-motion';
@@ -15,7 +15,7 @@ const AboutPage = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-        >
+        > 
           <ReviewsSection />
         </motion.div>
       </div>

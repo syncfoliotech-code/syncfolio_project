@@ -1,68 +1,109 @@
 .footer {
     background-color: var(--secondary);
-    padding: 2rem 0;
+    padding: 4rem 0 2rem 0;
     border-top: 1px solid var(--border);
 }
+
 .container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
 }
-.topSection {
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.column {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+}
+
+.heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    color: var(--foreground);
+}
+
+.address {
+    display: flex;
     align-items: center;
-    gap: 2rem;
-    width: 100%;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+    margin: 0;
 }
-.logo {
-    text-align: center;
+
+.navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 1.5rem; /* row-gap column-gap */
 }
+
+.navLink {
+    color: var(--muted-foreground);
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.navLink:hover {
+    color: var(--primary);
+}
+
 .socials {
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    justify-content: center;
 }
+
 .icon {
     color: var(--muted-foreground);
-    transition: color 0.2s ease, transform 0.2s ease;
+    transition: color 0.2s, transform 0.2s;
 }
+
 .icon:hover {
     color: var(--primary);
     transform: translateY(-3px);
 }
+
 .pageViewsContainer {
-    text-align: center;
+    margin-top: 1rem;
 }
+
 .bottomSection {
     width: 100%;
     text-align: center;
     border-top: 1px solid var(--border);
-    padding-top: 1.5rem;
-    margin-top: 1rem;
+    padding-top: 2rem;
 }
+
 .text {
     font-size: 0.875rem;
     color: var(--muted-foreground);
     margin: 0;
 }
+
+
+/* --- DESKTOP AND TABLET STYLES --- */
 @media (min-width: 768px) {
-    .topSection {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .grid {
+        grid-template-columns: 2fr 1.5fr 1fr; /* Adjusted grid ratio */
+        gap: 2rem;
     }
-    .logo {
-        flex: 1;
-        text-align: left;
+    
+    .column {
+        align-items: flex-start;
     }
-    .socials {
-        flex: 1;
-        justify-content: center;
-    }
-    .pageViewsContainer {
-        flex: 1;
-        text-align: right;
+
+    .column:last-child {
+        align-items: flex-end;
     }
 }

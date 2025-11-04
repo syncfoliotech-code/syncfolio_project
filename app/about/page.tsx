@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import StorySection from '@/components/sections/story-section'; 
+import StorySection from './story-section'; 
 import VantaBackground from '@/components/vanta-background';
 import styles from './about.module.css'; 
 import { motion } from 'framer-motion';

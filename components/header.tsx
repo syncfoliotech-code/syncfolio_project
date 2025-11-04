@@ -35,7 +35,7 @@ const Header = () => {
         <div className={styles.navWrapper}>
           <Link href="/#home">
             <Image 
-              src="/sync.png" 
+              src="/sync2.png" 
               alt="Logo" 
               width={180} 
               height={45} 

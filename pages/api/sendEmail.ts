@@ -44,14 +44,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       subject: `Thank you for contacting Syncfolio Tech!`,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px; text-align: center;">
-          <img src="https://your-website-url.com/sync.png" style="max-width: 200px; height: auto;" alt="Syncfolio Tech Logo"/>
+          <img src="https://syncfoliotech.vercel.app/sync2.png" style="max-width: 200px; height: auto;" alt="Syncfolio Tech Logo"/>
           <h2 style="color: #333;">Hey ${name},</h2>
           <p style="color: #555;">Thank you for reaching out to Syncfolio Tech. We have received your inquiry regarding our <strong>${service}</strong> services.</p>
           <p style="color: #555;">Our team is reviewing your message and we will get back to you as soon as possible, typically within 24 hours.</p>
           <p style="color: #555;">We are excited about the possibility of working with you.</p>
           <br/>
           <p style="color: #555;">Best regards,<br/><strong>The Syncfolio Tech Team</strong></p>
-          <p style="color: #555;"><a href="https://your-website-url.com">your-website-url.com</a></p>
+          <p style="color: #555;"><a href="https://syncfoliotech.vercel.app/">your-website-url.com</a></p>
         </div>
       `,
     };

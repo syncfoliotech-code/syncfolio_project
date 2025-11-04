@@ -24,6 +24,15 @@
       {
         "select-name": "off"
       }
+    ],
+    "axe/text-alternatives": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[loading]"
+        ]
+      }
     ]
   }
 }

@@ -1,8 +1,10 @@
 import HeroSection from "@/components/sections/hero-section";
-import StorySection from "@/components/sections/story-section";
-import ServicesSection from "@/components/sections/services-section";
-import CoreServicesSection from "@/components/sections/core-services-section";
+import ProductSection from "@/components/sections/product-section";
+import WhyUsSection from "@/components/sections/why-us-section";
 import ReviewsSection from "@/components/sections/reviews-section";
+import SkillsSection from "@/components/skills";
+import FaqSection from "@/components/sections/faq-section";
+import PageViewsSection from "@/components/sections/page-views-section";
 
 export default function Home() {
   return (
@@ -10,17 +12,23 @@ export default function Home() {
       <section id="home">
         <HeroSection />
       </section>
-      <section id="about">
-        <StorySection />
+      <section id="product">
+        <ProductSection />
       </section>
-      <section id="services">
-        <CoreServicesSection />
+      <section id="skills">
+        <SkillsSection />
       </section>
-      <section id="features">
-        <ServicesSection />
+      <section id="why-us">
+        <WhyUsSection />
       </section>
       <section id="reviews">
         <ReviewsSection />
+      </section>
+      <section id="faq">
+        <FaqSection />
+      </section>
+      <section id="stats">
+        <PageViewsSection />
       </section>
     </div>
   );

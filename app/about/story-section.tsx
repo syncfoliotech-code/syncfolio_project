@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
-import Image from 'next/image';
-import VantaBackground from '@/components/vanta-background';
+// import Image from 'next/image';
+// import VantaBackground from '@/components/vanta-background';
 import styles from './story.module.css';
 import { motion } from 'framer-motion';
 
@@ -15,7 +15,7 @@ const AboutPage = () => {
 
   return (
     <div className={styles.pageContainer}>
-      <VantaBackground />
+      {/* <VantaBackground /> */}
       <div className="container">
         <motion.div
           className={styles.contentContainer}
