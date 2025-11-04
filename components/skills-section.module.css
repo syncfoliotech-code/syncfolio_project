@@ -39,8 +39,11 @@
     gap: 1rem;
     cursor: grab;
     perspective: 1000px;
+    transition: border-color 0.3s ease;
 }
-
+.card:hover {
+    border-color: var(--primary);
+}
 .dark .card {
     background: linear-gradient(135deg, rgba(31, 41, 55, 0.8), rgba(13, 18, 34, 0.8));
 }

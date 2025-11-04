@@ -52,7 +52,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
         >
-            <a href="#download" className={styles.buttonPrimary}>Download App</a>
+            <a href="#download" className={styles.buttonPrimary} hidden>Download App</a>
             <a href="#product" className={styles.buttonSecondary}>Learn More</a>
         </motion.div>
       </div>

@@ -25,6 +25,10 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    transition: border-color 0.3s ease;
+}
+.card:hover {
+    border-color: var(--primary);
 }
 .icon {
     color: var(--primary);

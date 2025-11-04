@@ -41,9 +41,9 @@ const ContactPage = () => {
   };
 
   const contactDetails = [
-    { icon: <MapPin />, title: "Our Office Address:", details: ["123 Innovation Drive", "Tech City, 12345"] },
-    { icon: <Mail />, title: "Email Address:", details: ["contact@syncfoliotech.com"] },
-    { icon: <Phone />, title: "Mobile Number:", details: ["+1 (234) 567-890", "+1 (234) 567-891"] },
+    { icon: <MapPin />, title: "Our Office Address:", details: ["Plot no141/A , Dwaraka nagar clny,road no 7, Hasthinapuram central", "HYDERABAD, TELANGANA, 500079"] },
+    { icon: <Mail />, title: "Email Address:", details: ["syncfoliotech@gmail.com"] },
+    { icon: <Phone />, title: "Mobile Number:", details: ["+13134828657"] },
     { icon: <Clock />, title: "Business Hours:", details: ["Monday - Friday: 9:00 AM – 6:00 PM"] },
   ];
 
@@ -77,7 +77,7 @@ const ContactPage = () => {
             transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
         >
             <Image 
-                src="/sync.png" 
+                src="/sync2.png" 
                 alt="Syncfolio Tech Logo" 
                 width={500} 
                 height={125} 
@@ -108,7 +108,7 @@ const ContactPage = () => {
         </div>
         <div className={styles.mapContainer}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15181.12781878593!2d83.4312675685521!3d18.01938501255554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3994762f0f878f%3A0x8d75cf5600d8f638!2sTagarapuvalasa%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1672834123456"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7618.227191716389!2d78.55162971105568!3d17.310067431478885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPlot%20no141%2FA%20%2C%20Dwaraka%20nagar%20clny%2Croad%20no%207%2CHasthinapuram%20central%2C%20HYDERABAD%2C%20TELANGANA%2C%C2%A0500079!5e0!3m2!1sen!2sin!4v1762186374091!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}

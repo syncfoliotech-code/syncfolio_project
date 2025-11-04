@@ -4,6 +4,7 @@ import WhyUsSection from "@/components/sections/why-us-section";
 import ReviewsSection from "@/components/sections/reviews-section";
 import SkillsSection from "@/components/skills";
 import FaqSection from "@/components/sections/faq-section";
+import PageViewsSection from "@/components/sections/page-views-section";
 
 export default function Home() {
   return (
@@ -23,7 +24,12 @@ export default function Home() {
       <section id="reviews">
         <ReviewsSection />
       </section>
-      <section id="faq"><FaqSection /></section>
+      <section id="faq">
+        <FaqSection />
+      </section>
+      <section id="stats">
+        <PageViewsSection />
+      </section>
     </div>
   );
 }

@@ -26,6 +26,10 @@
     border-radius: 0.5rem;
     padding: 2rem;
     perspective: 1000px;
+    transition: border-color 0.3s ease;
+}
+.card:hover {
+    border-color: var(--primary);
 }
 .cardNumber {
     font-size: 1.5rem;

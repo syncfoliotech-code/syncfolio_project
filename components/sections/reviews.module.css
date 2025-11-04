@@ -35,6 +35,10 @@
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
+    transition: border-color 0.3s ease;
+}
+.card:hover {
+    border-color: var(--primary);
 }
 .profile {
     display: flex;
