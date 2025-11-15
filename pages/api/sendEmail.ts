@@ -51,7 +51,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           <p style="color: #555;">We are excited about the possibility of working with you.</p>
           <br/>
           <p style="color: #555;">Best regards,<br/><strong>The Syncfolio Tech Team</strong></p>
-          <p style="color: #555;"><a href="https://syncfoliotech.vercel.app/">your-website-url.com</a></p>
+          <p style="color: #555;"><a href="https://syncfoliotech.vercel.app/">https://syncfoliotech.vercel.app/</a></p>
         </div>
       `,
     };
