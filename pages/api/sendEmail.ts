@@ -12,14 +12,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'abhishakejutur@gmail.com',
-        pass: 'xiak bkhd yllz iwud',
+        user: 'syncfoliotech@gmail.com',
+        pass: 'ttjb qfyc focl vjhz',
       },
     });
 
     const mailOptions = {
-      from: 'abhishakejutur@gmail.com',
-      to: 'abhishakejutur@gmail.com',
+      from: 'syncfoliotech@gmail.com',
+      to: 'syncfoliotech@gmail.com',
       subject: `Syncfolio Tech - New Inquiry from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px;">
@@ -39,7 +39,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     };
 
     const autoReplyOptions = {
-      from: 'abhishakejutur@gmail.com',
+      from: 'syncfoliotech@gmail.com',
       to: email,
       subject: `Thank you for contacting Syncfolio Tech!`,
       html: `
