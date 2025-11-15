@@ -24,6 +24,9 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <title>SyncfolioTech</title>
+      </head>
       <body className={inter.className}>
         {loading ? (
           <PageLoader />
