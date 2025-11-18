@@ -9,6 +9,8 @@
 .title {
     font-size: 2.25rem;
     font-weight: 700;
+    font-family: DM Sans;
+    /* font-style: italic; */
 }
 .grid {
     display: grid;
@@ -38,11 +40,15 @@
     font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
+    font-family: DM Sans;
+    /* font-style: italic */
 }
 .cardDesc {
     color: var(--muted-foreground);
     font-size: 0.9rem;
     line-height: 1.6;
+    font-family: DM Sans;
+    font-style: italic;
 }
 @media (min-width: 768px) {
     .grid { grid-template-columns: repeat(2, 1fr); }

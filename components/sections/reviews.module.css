@@ -6,6 +6,7 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
+    font-family: DM Sans;
 }
 .scroller {
     width: 100%;
@@ -61,6 +62,7 @@
 }
 .reviewerName {
     font-weight: 600;
+    font-family: DM Sans;
 }
 .reviewText {
     font-style: italic;
@@ -68,6 +70,8 @@
     line-height: 1.6;
     flex-grow: 1;
     margin-bottom: 1rem;
+    font-family: DM Sans;
+    font-style: italic;
 }
 .rating {
     display: flex;

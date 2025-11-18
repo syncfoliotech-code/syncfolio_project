@@ -28,6 +28,8 @@
     font-weight: 600;
     margin: 0 0 0.5rem 0;
     color: var(--foreground);
+    font-family: DM Sans;
+    /* font-style: italic; */
 }
 
 .address {
@@ -37,6 +39,8 @@
     font-size: 0.9rem;
     color: var(--muted-foreground);
     margin: 0;
+    font-family: DM Sans;
+    /* font-style: italic; */
 }
 
 .navList {
@@ -46,6 +50,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem 1.5rem; /* row-gap column-gap */
+    font-family: DM Sans;
+    /* font-style: italic; */
 }
 
 .navLink {
@@ -83,6 +89,8 @@
     text-align: center;
     border-top: 1px solid var(--border);
     padding-top: 2rem;
+    font-family: DM Sans;
+    font-style: italic;
 }
 
 .text {

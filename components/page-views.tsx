@@ -26,7 +26,7 @@ const PageViews = () => {
 
     return (
         <div className={styles.counterWrapper}>
-            <p>Global Engagements:</p>
+            <p className={styles.labels}>Global Engagements:</p>
             <span className={styles.counter}>{count.toLocaleString()}</span>
         </div>
     );

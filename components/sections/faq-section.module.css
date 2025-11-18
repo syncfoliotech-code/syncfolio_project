@@ -8,6 +8,7 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
+    font-family: DM Sans;
 }
 
 .faqContainer {
@@ -43,6 +44,7 @@
     font-size: 1.125rem;
     font-weight: 600;
     margin: 0;
+    font-family: DM Sans;
 }
 
 .answerText {
@@ -51,4 +53,6 @@
     border-top: 1px solid var(--border);
     color: var(--muted-foreground);
     line-height: 1.7;
+    font-family: DM Sans;
+    font-style: italic;
 }

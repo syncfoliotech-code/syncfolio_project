@@ -39,7 +39,7 @@ const PageViewsSection = () => {
                 localStorage.setItem('pageViewCount', newCount.toString());
                 return newCount;
             });
-        }, 100000); 
+        }, 10000); 
         return () => clearInterval(interval);
     }, []);
 

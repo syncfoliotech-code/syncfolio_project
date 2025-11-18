@@ -10,6 +10,8 @@
 .title {
     font-size: 2.5rem;
     font-weight: 700;
+    font-family: DM Sans;
+    /* font-style: italic; */
 }
 .highlight {
     color: var(--primary);
@@ -19,11 +21,15 @@
     font-weight: 500;
     margin-top: 0.5rem;
     color: var(--muted-foreground);
+    font-family: DM Sans;
+    /* font-style: italic; */
 }
 .description {
     margin-top: 1rem;
     font-size: 1.125rem;
     line-height: 1.7;
+    font-family: DM Sans;
+    font-style: italic;
 }
 .grid {
     display: grid;
@@ -56,10 +62,13 @@
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    font-family: DM Sans;
 }
 .cardDescription {
     color: var(--muted-foreground);
     font-size: 0.95rem;
+    font-family: DM Sans;
+    font-style: italic;
 }
 .tagline {
     margin-top: 4rem;

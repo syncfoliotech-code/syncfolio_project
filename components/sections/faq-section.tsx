@@ -6,20 +6,20 @@ import styles from './faq-section.module.css';
 
 const faqData = [
     {
-        question: "What is SyncFolio PDF Editor?",
-        answer: "SyncFolio PDF Editor is an all-in-one mobile application that allows you to create, edit, sign, and manage PDF documents directly from your smartphone. It's designed to be powerful, intuitive, and secure."
+        question: "What is SyncFolio Library?",
+        answer: "SyncFolio Library is an all-in-one mobile toolkit built to handle everything from document annotation to effortless collaboration."
     },
     {
         question: "Is my data secure with SyncFolioTech apps?",
         answer: "Absolutely. We prioritize enterprise-grade security in all our products. Your documents are protected with robust encryption, and you have full control over sharing permissions."
     },
-    {
-        question: "Can I access my documents on multiple devices?",
-        answer: "Yes! Our flagship app includes seamless cloud sync, allowing you to access and edit your files instantly across all your devices—whether it's a smartphone, tablet, or desktop."
-    },
+    // {
+    //     question: "Can I access my documents on multiple devices?",
+    //     answer: "Yes! Our flagship app includes seamless cloud sync, allowing you to access and edit your files instantly across all your devices—whether it's a smartphone, tablet, or desktop."
+    // },
     {
         question: "What platforms is the app available on?",
-        answer: "SyncFolio PDF Editor is available for both iOS and Android, ensuring a consistent and high-performance experience regardless of your device's operating system."
+        answer: "SyncFolio Library supports both mobile and web platforms, delivering a consistent, high-performance experience across all devices and operating systems."
     },
     {
         question: "Do you offer customer support?",

@@ -9,6 +9,7 @@
     text-align: center;
     margin-bottom: 3rem;
     color: var(--primary);
+    font-family: DM Sans;
 }
 
 .counterWrapper {

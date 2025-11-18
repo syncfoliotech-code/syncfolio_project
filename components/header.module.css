@@ -39,6 +39,8 @@
     color: #ffffff;
     position: relative;
     padding: 0.25rem 0;
+    font-family: DM Sans;
+    /* font-style: italic; */
 }
 .link::after {
     content: '';

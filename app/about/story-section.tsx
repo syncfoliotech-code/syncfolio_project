@@ -31,9 +31,9 @@ const AboutPage = () => {
           </div>
 
           <div className={styles.section}>
-            <h2 className={styles.title}>Our Vision</h2>
+            <h2 className={styles.title}>Vision & Mission</h2>
             <p className={styles.paragraph}>
-              To redefine how people create, edit, and share digital documents through seamless mobile technology.
+              To empower individuals and businesses worldwide by delivering innovative, high-quality products that simplify work, enhance creativity, and drive progress.
             </p>
           </div>
 

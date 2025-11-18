@@ -71,7 +71,7 @@ const FeaturesPage = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <h1 className={styles.mainTitle}>
-                        Our Product: <span className={styles.highlight}>SyncFolio PDF Editor</span>
+                        Our Product: <span className={styles.highlight}>SyncFolio Library</span>
                     </h1>
                     <p className={styles.subtitle}>Smart. Fast. Powerful.</p>
                     <p className={styles.description}>

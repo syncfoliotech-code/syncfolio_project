@@ -5,12 +5,15 @@ import { Edit3, PenTool, FilePlus, Cloud, Lock, ScanText } from 'lucide-react';
 import styles from './product-section.module.css';
 
 const featuresData = [
-    { icon: <Edit3 />, title: "Edit PDFs", description: "Edit text, images, and annotations in your documents." },
-    { icon: <PenTool />, title: "E-Sign Documents", description: "Sign documents and add custom stamps with ease." },
-    { icon: <FilePlus />, title: "Manage Files", description: "Merge, split, and compress your PDF files." },
-    { icon: <Cloud />, title: "Cloud Sync", description: "Instant access to your documents across all devices." },
-    { icon: <Lock />, title: "Secure Sharing", description: "Share safely with encryption and user permissions." },
+    { icon: <Edit3 />, title: "Custom Library", description: "Organize and manage your documents with ease." },
+    { icon: <PenTool />, title: "Annotation & Markup", description: "Add text, images, and annotations to your documents." },
+    { icon: <FilePlus />, title: "Search & Accessibility", description: "Quickly find and access your documents." },
+    { icon: <Cloud />, title: "Performance & Platform Support", description: "Instant access to your documents across all devices." },
+    { icon: <Lock />, title: "Comprehensive PDF Customization", description: "Tailor your documents to your specific needs." },
     { icon: <ScanText />, title: "OCR Recognition", description: "Recognize text from scanned files for easy editing." },
+    { icon: <Cloud />, title: "Data Encryption for Security", description: "Protect your data with end-to-end encryption." },
+    { icon: <Lock />, title: "Security Features", description: "Protect your documents with encryption and password protection." },
+    { icon: <ScanText />, title: "Collaboration Tools", description: "Share and collaborate on documents in real-time." },
 ];
 
 const ProductSection = () => {
@@ -26,7 +29,7 @@ const ProductSection = () => {
                     <h2 className={styles.title}>Our Product: <span className={styles.highlight}>SyncFolio PDF Editor</span></h2>
                     <p className={styles.subtitle}>Smart. Fast. Powerful.</p>
                     <p className={styles.description}>
-                        SyncFolio PDF Editor is your all-in-one mobile document toolkit — designed to handle everything from annotation to collaboration.
+                        SyncFolio Library is a comprehensive mobile toolkit designed to manage everything from annotation to effortless collaboration.
                     </p>
                 </motion.div>
 

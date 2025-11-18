@@ -51,7 +51,6 @@ const ContactPage = () => {
     <div className={styles.pageContainer}>
       <VantaBackground />
       
-      {/* --- THIS IS THE PART YOU WANTED TO KEEP --- */}
       <div className={`container ${styles.mainContent}`}>
         <motion.div
           className={styles.formContainer}
@@ -65,7 +64,7 @@ const ContactPage = () => {
             <div className={styles.inputGroup}><User className={styles.icon} /><input type="text" id="name" name="name" placeholder="Your Name" required /></div>
             <div className={styles.inputGroup}><Mail className={styles.icon} /><input type="email" id="email" name="email" placeholder="Your Email" required /></div>
             <div className={styles.inputGroup}><Phone className={styles.icon} /><input type="tel" id="phone" name="phone" placeholder="Contact Number" required /></div>
-            <div className={styles.inputGroup}><Briefcase className={styles.icon} /><select id="service" name="service"><option>Web Development</option><option>Mobile App Development</option><option>Digital Marketing</option><option>Cloud Support</option><option>Other</option></select></div>
+            <div className={styles.inputGroup}><Briefcase className={styles.icon} /><select id="service" name="service"><option>AI Tools</option><option>Full-Stack</option><option>Custom Library & Component Solutions</option><option>Other</option></select></div>
             <div className={styles.inputGroup}><MessageSquare className={styles.icon} /><textarea id="comments" name="comments" rows={5} placeholder="Your Message" required></textarea></div>
             <button type="submit" className={styles.submitButton} disabled={status === 'loading'}><AnimatePresence mode="wait">{status === 'loading' && <motion.div key="loading" className={styles.buttonContent}><div className={styles.spinner}></div><span>Sending...</span></motion.div>}{status === 'success' && <motion.div key="success" className={styles.buttonContent}><Check /><span>Message Sent!</span></motion.div>}{status === 'error' && <motion.div key="error" className={`${styles.buttonContent} ${styles.error}`}><AlertTriangle /><span>Failed!</span></motion.div>}{status === 'idle' && <motion.span key="idle">Send Message</motion.span>}</AnimatePresence></button>
           </form>

@@ -29,11 +29,12 @@ const HeroSection = () => {
         
         <motion.h1
           className={styles.title}
+          id="#text3d"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Empower Your Productivity with Smart Mobile Tools
+          <span id="#text3d">Empower Your Productivity with Smart Mobile Tools</span>
         </motion.h1>
         
         <motion.p

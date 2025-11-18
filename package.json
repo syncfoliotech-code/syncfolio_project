@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@react-three/fiber": "^9.4.0",
     "@splinetool/react-spline": "^4.1.0",
     "@studio-freight/lenis": "^1.0.42",
     "framer-motion": "^12.23.24",

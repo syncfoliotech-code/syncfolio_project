@@ -9,6 +9,7 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
+    font-family: DM Sans;
 }
 
 .scrollerContainer {
@@ -51,6 +52,7 @@
 .cardTitle {
     font-size: 1.125rem;
     font-weight: 600;
+    font-family: DM Sans;
 }
 
 .nextjsIcon {

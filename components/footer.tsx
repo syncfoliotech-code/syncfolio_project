@@ -30,7 +30,7 @@ const Footer = () => {
             </p>
             <p className={styles.address}>
               <Phone size={16} />
-              <span>+1 (234) 567-890</span>
+              <span>+1 (313) 482-8657</span>
             </p>
           </div>
 
