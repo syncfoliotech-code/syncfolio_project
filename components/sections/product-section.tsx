@@ -26,10 +26,10 @@ const ProductSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className={styles.title}>Our Product: <span className={styles.highlight}>SyncFolio PDF Editor</span></h2>
+                    <h2 className={styles.title}>Our Product: <span className={styles.highlight}>SyncFolio Library</span></h2>
                     <p className={styles.subtitle}>Smart. Fast. Powerful.</p>
                     <p className={styles.description}>
-                        SyncFolio Library is a comprehensive mobile toolkit designed to manage everything from annotation to effortless collaboration.
+                        SyncFolio Library is a comprehensive mobile toolkit designed to manage everything from annotation to effortless collaboration.
                     </p>
                 </motion.div>
 
