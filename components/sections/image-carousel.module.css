@@ -1,0 +1,104 @@
+.carouselContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 150px auto 50px auto;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: 1px solid var(--border);
+}
+
+.swiperInstance {
+    width: 100%;
+    height: 65vh;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideImageContainer {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slideImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+    color: var(--primary) !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.dark :global(.swiper-button-next),
+.dark :global(.swiper-button-prev) {
+    background-color: rgba(30, 30, 30, 0.8) !important;
+}
+
+:global(.swiper-button-next:hover),
+:global(.swiper-button-prev:hover) {
+    transform: scale(1.1) !important;
+    background-color: white !important;
+}
+
+.dark :global(.swiper-button-next:hover),
+.dark :global(.swiper-button-prev:hover) {
+    background-color: #2a2a2a !important;
+}
+
+:global(.swiper-button-next::after),
+:global(.swiper-button-prev::after) {
+    font-size: 18px !important;
+    font-weight: 900 !important;
+}
+
+:global(.swiper-pagination-bullet) {
+    background: var(--muted-foreground) !important;
+    width: 10px !important;
+    height: 10px !important;
+    opacity: 0.7 !important;
+}
+
+:global(.swiper-pagination-bullet-active) {
+    background: var(--primary) !important;
+    opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+    .carouselContainer {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+        margin-top: 100px;
+    }
+    .swiperInstance {
+        height: 45vh;
+    }
+    :global(.swiper-button-next),
+    :global(.swiper-button-prev) {
+        width: 36px !important;
+        height: 36px !important;
+    }
+    :global(.swiper-button-next::after),
+    :global(.swiper-button-prev::after) {
+        font-size: 14px !important;
+    }
+}

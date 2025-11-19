@@ -5,12 +5,14 @@ import ReviewsSection from "@/components/sections/reviews-section";
 import SkillsSection from "@/components/skills";
 import FaqSection from "@/components/sections/faq-section";
 import PageViewsSection from "@/components/sections/page-views-section";
+import ImageCarousel from "@/components/sections/ImageCarousel";
 
 export default function Home() {
   return (
     <div>
       <section id="home">
-        <HeroSection />
+        <ImageCarousel />
+        {/* <HeroSection /> */}
       </section>
       <section id="product">
         <ProductSection />

@@ -19,7 +19,7 @@ const featuresData = [
 const ProductSection = () => {
     return (
         <div className={styles.section}>
-            <div className="container">
+            <div className="container ">
                 <motion.div 
                     className={styles.header}
                     initial={{ opacity: 0, y: -20 }}
