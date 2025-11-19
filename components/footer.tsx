@@ -54,7 +54,7 @@ const Footer = () => {
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className={styles.icon}><Twitter /></a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={styles.icon}><Linkedin /></a>
             </div>
-            <div className={styles.pageViewsContainer}>
+            <div hidden className={styles.pageViewsContainer}>
                 <PageViews />
             </div>
           </div>
