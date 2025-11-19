@@ -30,10 +30,12 @@ body {
   --primary: #1e40af;
   --secondary: #f3f4f6;
   --muted-foreground: #6b7280;
+  --mutedsamecolor:#9ca3af;
   --accent: #16a34a;
   --border: #e5e7eb;
   --card-bg: #ffffff;
   --footerbg:#1f2937;
+  --samecolor: #eff1f6;
 }
 .dark {
   --background: #0d1222;
@@ -41,10 +43,12 @@ body {
   --primary: #60a5fa;
   --secondary: #1f2937;
   --muted-foreground: #9ca3af;
+  --mutedsamecolor:#9ca3af;
   --accent: #4ade80;
   --border: #374151;
   --card-bg: #1f2937;
   --footerbg:#1f2937;
+  --samecolor: #eff1f6;
 }
 
 body {

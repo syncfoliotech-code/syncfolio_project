@@ -89,7 +89,7 @@
 .cardDescription {
     color: var(--muted-foreground);
     font-size: 0.95rem;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans';
     font-style: italic;
 }
 .tagline {

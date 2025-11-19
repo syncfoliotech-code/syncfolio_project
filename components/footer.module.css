@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--secondary);
+    background-color: var(--footerbg);
     padding: 4rem 0 2rem 0;
     border-top: 1px solid var(--border);
 }
@@ -27,7 +27,7 @@
     font-size: 1.125rem;
     font-weight: 600;
     margin: 0 0 0.5rem 0;
-    color: var(--foreground);
+    color: var(--samecolor);
     font-family: DM Sans;
     /* font-style: italic; */
 }
@@ -37,7 +37,7 @@
     align-items: center;
     gap: 0.75rem;
     font-size: 0.9rem;
-    color: var(--muted-foreground);
+    color: var(--mutedsamecolor);
     margin: 0;
     font-family: DM Sans;
     /* font-style: italic; */
@@ -55,13 +55,15 @@
 }
 
 .navLink {
-    color: var(--muted-foreground);
+    /* color: var(--muted-foreground); */
+    color: var(--mutedsamecolor);
     font-size: 0.9rem;
     transition: color 0.2s;
 }
 
 .navLink:hover {
-    color: var(--primary);
+    /* color: var(--primary); */
+    color: var(--samecolor);
 }
 
 .socials {
@@ -71,7 +73,8 @@
 }
 
 .icon {
-    color: var(--muted-foreground);
+    /* color: var(--muted-foreground); */
+    color: var(--mutedsamecolor);
     transition: color 0.2s, transform 0.2s;
 }
 
@@ -87,7 +90,8 @@
 .bottomSection {
     width: 100%;
     text-align: center;
-    border-top: 1px solid var(--border);
+    /* border-top: 1px solid var(--border); */
+    border-top: 1px solid var(--mutedsamecolor);
     padding-top: 2rem;
     font-family: DM Sans;
     font-style: italic;
@@ -95,7 +99,8 @@
 
 .text {
     font-size: 0.875rem;
-    color: var(--muted-foreground);
+    /* color: var(--muted-foreground); */
+    color: var(--mutedsamecolor);
     margin: 0;
 }
 

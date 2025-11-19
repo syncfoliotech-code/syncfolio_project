@@ -37,6 +37,19 @@
     color: var(--primary);
     font-family: DM Sans;
 }
+
+.title {
+    font-size: 2.8rem;
+    /* font-weight: 900; */
+    font-family: 'DM Sans', sans-serif;
+    color: var(--foreground);
+    text-shadow:
+        1px 1px 0px hsl(0, 0%, 80%),
+        2px 2px 0px hsl(0, 0%, 75%),
+        3px 3px 0px hsl(0, 0%, 70%),
+        4px 4px 0px hsl(0, 0%, 65%),
+        5px 5px 8px rgba(0, 0, 0, 0.3);
+}
 .paragraph {
     font-size: 1rem;
     line-height: 1.7;
@@ -59,6 +72,18 @@
     font-size: 1.125rem;
     color: var(--foreground);
     font-family: DM Sans; 
+}
+.valueCard h3 {
+    /* font-size: 2.8rem; */
+    /* font-weight: 900; */
+    font-family: 'DM Sans', sans-serif;
+    color: var(--foreground);
+    text-shadow:
+        1px 1px 0px hsl(0, 0%, 80%),
+        2px 2px 0px hsl(0, 0%, 75%),
+        3px 3px 0px hsl(0, 0%, 70%),
+        4px 4px 0px hsl(0, 0%, 65%),
+        5px 5px 8px rgba(0, 0, 0, 0.3);
 }
 .valueCard p {
     margin: 0;

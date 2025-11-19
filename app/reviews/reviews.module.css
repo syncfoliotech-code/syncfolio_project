@@ -7,6 +7,18 @@
     font-family: DM Sans; 
     /* font-style: italic; */
 }
+.title {
+    font-size: 2.8rem;
+    /* font-weight: 900; */
+    font-family: 'DM Sans', sans-serif;
+    color: var(--foreground);
+    text-shadow:
+        1px 1px 0px hsl(0, 0%, 80%),
+        2px 2px 0px hsl(0, 0%, 75%),
+        3px 3px 0px hsl(0, 0%, 70%),
+        4px 4px 0px hsl(0, 0%, 65%),
+        5px 5px 8px rgba(0, 0, 0, 0.3);
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -55,6 +67,17 @@
     transform: translateZ(40px);
     font-family: DM Sans; font-style: italic;
 }
+.cardTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--card-foreground);
+    text-shadow:
+        1px 1px 0px hsl(0, 0%, 80%),
+        2px 2px 0px hsl(0, 0%, 75%),
+        3px 3px 5px rgba(0, 0, 0, 0.1);
+}
 .cardFooter {
     display: flex;
     justify-content: space-between;
@@ -85,7 +108,12 @@
 .reviewerName {
     font-weight: 600;
     font-size: 0.9rem;
+    text-shadow:
+        1px 1px 0px hsl(0, 0%, 80%),
+        2px 2px 0px hsl(0, 0%, 75%),
+        3px 3px 5px rgba(0, 0, 0, 0.1);
 }
+
 .rating {
     display: flex;
     gap: 0.25rem;
