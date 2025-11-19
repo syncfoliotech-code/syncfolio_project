@@ -28,7 +28,7 @@ const ImageCarousel = () => {
         loop={true}
         autoplay={{
           delay: 4000,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
         navigation={true}
         pagination={{ clickable: true }}
