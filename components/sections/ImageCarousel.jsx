@@ -55,7 +55,7 @@ const swiperCustomStyles = `
 
 const ImageOnlyCarousel = () => {
   const images = [
-    "/images/logo2.png",
+    "/images/logo3.png",
     "/images/thumb9.png",
     "/images/thumb6.png",
     // "/images/thumb7.png",
