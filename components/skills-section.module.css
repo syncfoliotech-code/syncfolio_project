@@ -15,7 +15,9 @@
     font-size: 2.8rem;
     /* font-weight: 900; */
     font-family: 'DM Sans', sans-serif;
-    color: var(--foreground);
+    /* color: var(--foreground); */
+    color: var(--primary);
+
     text-shadow:
         1px 1px 0px hsl(0, 0%, 80%),
         2px 2px 0px hsl(0, 0%, 75%),
@@ -64,8 +66,9 @@
     font-size: 1.00rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    color: var(--primary);
     font-family: 'DM Sans', sans-serif;
-    color: var(--foreground);
+    /* color: var(--foreground); */
     text-shadow:
         1px 1px 0px hsl(0, 0%, 80%),
         2px 2px 0px hsl(0, 0%, 75%),

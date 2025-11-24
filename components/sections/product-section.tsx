@@ -50,6 +50,7 @@ const ProductSection = () => {
                     ))}
                 </div>
                 <motion.p 
+                hidden
                     className={styles.tagline}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}

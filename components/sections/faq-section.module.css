@@ -8,7 +8,14 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
+    color: var(--primary);
     font-family: DM Sans;
+    text-shadow:
+        1px 1px 0px hsl(0, 0%, 80%),
+        2px 2px 0px hsl(0, 0%, 75%),
+        3px 3px 0px hsl(0, 0%, 70%),
+        4px 4px 0px hsl(0, 0%, 65%),
+        5px 5px 8px rgba(0, 0, 0, 0.3);
 }
 
 .faqContainer {
@@ -45,6 +52,7 @@
     font-weight: 600;
     margin: 0;
     font-family: DM Sans;
+    color: var(--primary);
 }
 
 .answerText {
