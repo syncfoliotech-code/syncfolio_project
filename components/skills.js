@@ -9,7 +9,7 @@ import styles from './skills-section.module.css';
 
 const skillsData = [
   
-  { id: 1, name: "Artificial Intelligence Solutions", icon: <SiOpenai size={40} style={{ color: "#412991" }} /> },
+  { id: 1, name: "AI Solutions", icon: <SiOpenai size={40} style={{ color: "#412991" }} /> },
   { id: 2, name: "AI-Powered Tech", icon: <TbBrain size={40} style={{ color: "#8A2BE2" }} /> },
   { id: 3, name: "Intelligent Automation", icon: <TbRobot size={40} style={{ color: "#00C4B3" }} /> },
   { id: 4, name: "AI-Driven Innovations", icon: <FaLightbulb size={40} style={{ color: "#FFD700" }} /> },
