@@ -129,7 +129,13 @@
 .infoDetails { display: flex; flex-direction: column; gap: 2rem; }
 .detailItem { display: flex; align-items: flex-start; gap: 1rem; }
 .detailIcon { color: var(--primary); margin-top: 4px; } /* Use theme's primary color for icons */
-.detailText h4 { margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600; }
+.detailText h4 { margin: 0 0 0.5rem 0; font-size: 1.125rem; font-weight: 600; color: var(--primary); }
+.detailText h4 {
+    text-shadow:
+        1px 1px 0px hsl(0, 0%, 80%),
+        2px 2px 0px hsl(0, 0%, 75%),
+        3px 3px 5px rgba(0, 0, 0, 0.1);
+}
 .detailText p { margin: 0; opacity: 0.8; }
 .mapContainer { width: 100%; min-height: 300px; border-radius: 0.75rem; overflow: hidden; }
 .mapFrame { filter: grayscale(1); }
